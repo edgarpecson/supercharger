@@ -1,0 +1,20 @@
+.block {
+    background-image: url('./assets/dashboard.jpg');
+    background-position: center;
+    height: 500px;
+    width: 100%;
+
+}
+.container  {
+text-align: center;
+}
+
+
+#supercharger {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#resultBox {
+    color: orange;
+    background-color: black;
+}

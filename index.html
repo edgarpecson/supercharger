@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Mansalva&family=Orbitron&family=Oswald&family=Oxygen:wght@300&family=Roboto&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  
+
+    <!-- STYLES.CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Distance Conversion</title>
+</head>
+
+
+<body>
+
+<!-- CREATE A BOOTSTRAP NAV BAR AND ADDED THE TSLA ICON AS AN IMAGE-->
+<nav class="navbar bg-body-tertiary" >
+    <div class="container-fluid" style="background-color: red;">
+      <span class="navbar-brand mb-0 h1" id="supercharger" style="color:white" ><img style ="width: 50px; height=50px" src="./assets/Tesla-Logo.jpg" alt="tsla"> SUPERCHARGER</span>
+
+      
+    </div>
+  </nav>
+
+<!-- THIS IS THE MIDDLE SECTION THAT TAKES INPUT FROM USER AND DISPLAY RESULTS -->
+    <div class="container block">
+       <form>
+        
+            <p>Hello Mr. Musk, How far are you driving today?</p>
+            <div class="row row-no-gutters"></div>
+            <div class="col-lg-6">
+            <label for="convert">Enter Distance:</label>
+            <input type="text" id="convert" name="convert" onclick="clearFields();">
+          </div>
+
+          <div class="col-lg-4">
+              <input type="radio" id="miles" name="units" value="Miles">
+              <label for="miles">Miles</label>
+           
+              <input type="radio" id="kilom" name="units" value="Kilom" >
+              <label for="kilom">Kilometers</label>
+            </div>
+
+          <div class="col-lg-2">
+             <!-- SUBMIT BUTTON WILL SEND TO JAVASCRIPT AND ALSO CLEAR THE FIELDS -->
+            <input type="button" onclick="calcNumber(); showResult;" value="Submit">
+          </div>
+          <br>
+
+            <!-- DISPLAY RESULTS TO THIS LOCATION -->
+            <div id="resultBox"></div>
+        </div>
+
+        </form>
+    </div>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+
+    <!-- JAVASCRIPT -->
+    <script src="./script.js"></script>
+</body>
+</html>
